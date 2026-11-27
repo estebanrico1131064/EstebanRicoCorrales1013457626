@@ -88,6 +88,14 @@ class PruebaLeer(BasePruebaCRUD):
 
         self.assertEqual(self.gestor.buscar("impresora"), [])
 
+    def test_buscar_por_texto_encuentra_coincidencias(self) -> None:
+        self.crear_producto_ejemplo(nombre="Mouse optico")
+
+        resultados = self.gestor.buscar("mouse")
+
+        self.assertEqual(len(resultados), 1)
+        self.assertEqual(resultados[0].nombre, "Mouse optico")
+
 
 class PruebaActualizar(BasePruebaCRUD):
     """UPDATE: un caso exitoso y casos de error."""

@@ -37,6 +37,15 @@ ejecuta las pruebas automaticamente en cada `push`.
 `-- README.md
 ```
 
+## Funcionalidades
+
+- Crear productos con id autoincremental.
+- Listar todos los productos registrados.
+- Buscar productos por id o por texto.
+- Actualizar datos de un producto existente.
+- Eliminar productos del inventario.
+- Persistencia automatica en archivo JSON.
+
 ## Uso
 
 ```bash

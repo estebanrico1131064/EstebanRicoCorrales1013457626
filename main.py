@@ -131,7 +131,7 @@ def main() -> None:
         print(MENU)
         opcion = input("Selecciona una opcion: ").strip()
         if opcion == "0":
-            print("\nHasta pronto.")
+            print("\nHasta pronto. Gracias por usar el sistema de gestion de productos.")
             return
         accion = ACCIONES.get(opcion)
         if accion is None:
